@@ -1,0 +1,76 @@
+extension,name,representation,domain,purpose,typical_use,notes
+txt,Plain Text,text,General,Human-readable text,Very portable,No schema
+md,Markdown,text,Documentation,Formatted plain-text documentation,GitHub/docs,Lightweight syntax
+json,JavaScript Object Notation,text,Data/API,Structured data interchange,APIs/config,Verbose for large data
+jsonl,JSON Lines,text,Data Engineering,One JSON object per line,Logs/streaming,Repeated keys can be expensive
+csv,Comma-Separated Values,text,Data,Tabular interchange,Exports/spreadsheets,Weak type/schema semantics
+yaml,YAML,text,Configuration,Human-friendly structured config,DevOps/config,Indentation-sensitive
+toml,TOML,text,Configuration,Configuration with explicit structure,Python/tooling,Less universal than JSON
+xml,Extensible Markup Language,text,Documents/API,Structured markup/data exchange,Enterprise/document systems,Verbose
+sql,SQL Script,text,Database,Queries/schema/data scripts,DB migrations/dumps,Engine-specific syntax
+parquet,Apache Parquet,binary,Data Engineering,Columnar analytical storage,Data lakes/analytics,Not designed for casual manual editing
+avro,Apache Avro,binary/text ecosystem,Data Engineering,Schema-oriented serialization,Events/data systems,Requires schema-aware tooling
+orc,Apache ORC,binary,Data Engineering,Columnar analytical storage,Hadoop/Hive analytics,Ecosystem-specific tooling
+arrow,Apache Arrow,binary,Data Engineering,Columnar in-memory representation,Analytics/interchange,Primarily an in-memory format
+sqlite3,SQLite Database,binary,Database,Embedded relational database,Apps/local storage,Single-file database
+py,Python Source,text,Programming,Python source code,Software development,Requires Python runtime
+ipynb,Jupyter Notebook,text,Programming/AI,Notebook document,Data science/education,Can contain outputs and metadata
+pyc,Python Bytecode,binary,Programming,Compiled Python bytecode,Python runtime,Usually generated
+java,Java Source,text,Programming,Java source,Software development,Compiled before typical execution
+class,Java Class,binary,Programming,JVM bytecode,Java runtime,Not source
+jar,Java Archive,binary/container,Programming,Java package/archive,Java applications/libraries,ZIP-based package
+cpp,C++ Source,text,Programming,C++ source,Systems/software,Compiled
+h,C/C++ Header,text,Programming,Declarations/macros,C/C++,Not independently executable
+js,JavaScript,text,Web,JavaScript source,Web/Node.js,Runtime-dependent
+ts,TypeScript,text,Web,Typed JavaScript source,Web/backend,Usually transpiled
+html,HTML,text,Web,Web document structure,Web,Rendered by browser
+css,CSS,text,Web,Presentation/style rules,Web,Usually delivered with HTML
+wasm,WebAssembly,binary,Web,Portable low-level executable module,Web/server runtimes,Requires compatible runtime
+sqlitedb,SQLite Database,binary,Database,SQLite storage,Embedded apps,Extension naming varies
+pkl,Pickle,binary,Python/AI,Python object serialization,Python workflows,Do not load untrusted pickles
+joblib,Joblib Artifact,binary,Python/ML,Python object/model persistence,ML workflows,Treat untrusted artifacts carefully
+pt,PyTorch Artifact,binary,AI/ML,Model/tensor artifact,PyTorch,Exact contents depend on producer
+pth,PyTorch Weights/Artifact,binary,AI/ML,Model weights/artifact,PyTorch,Loading safety depends on serialization
+onnx,Open Neural Network Exchange,binary,AI/ML,Model interchange,Inference/deployment,Operator/runtime compatibility matters
+safetensors,SafeTensors,binary,AI/ML,Tensor serialization,ML model weights,Weights-focused format
+gguf,GGUF,binary,AI/ML,LLM model distribution,Local LLM inference,Runtime/tool compatibility matters
+h5,HDF5,binary,Scientific/AI,Hierarchical data,Scientific/ML,Container-like structure
+npy,NumPy Array,binary,AI/ML/Data,Single NumPy array,Python numerical work,Python/NumPy ecosystem
+npz,NumPy Archive,binary,AI/ML/Data,Multiple NumPy arrays,Python numerical work,NumPy ecosystem
+dockerfile,Dockerfile,text,DevOps,Container image build instructions,Docker,Conventionally extensionless
+tf,Terraform Configuration,text,Cloud/DevOps,Infrastructure as code,Terraform,State handled separately
+tfstate,Terraform State,text/json-like,Cloud/DevOps,Infrastructure state,Terraform,Sensitive; do not casually commit
+pem,PEM Encoded Security Material,text,Security,Certificates/keys/chains,TLS/SSH,May contain private keys
+crt,Certificate,text/binary,Security,Certificate file,TLS,Encoding/container varies
+csr,Certificate Signing Request,text,Security,Certificate request,PKI,Contains public information/request data
+pdf,Portable Document Format,binary,Documents,Fixed-layout document,Publishing,Complex internal structure
+docx,Office Open XML Document,binary/container,Documents,Editable document,Office,Package of XML/resources
+tex,LaTeX Source,text,Documents,Typesetting source,Academic publishing,Requires toolchain
+png,Portable Network Graphics,binary,Images,Lossless raster image,Web/graphics,Supports transparency
+jpg,JPEG,binary,Images,Lossy raster image,Photography/web,No native alpha channel
+svg,Scalable Vector Graphics,text/xml,Images,Vector graphics,Icons/web,Can contain active content
+webp,WebP,binary,Images,Efficient raster image,Web,Tooling/support varies by environment
+avif,AVIF,binary,Images,Modern image compression,Web,Encoding/decoding cost varies
+mp4,MPEG-4 Part 14,binary/container,Video,Media container,Web/mobile,Codec-independent container
+mkv,Matroska,binary/container,Video,Flexible multimedia container,Media/archive,Compatibility varies
+wav,Waveform Audio,binary/container,Audio,Audio container,Audio production,Often uncompressed PCM
+flac,Free Lossless Audio Codec,binary,Audio,Lossless audio compression,Music/archive,Larger than lossy codecs
+mp3,MPEG Audio Layer III,binary,Audio,Lossy audio,Music/distribution,Lossy
+zip,ZIP,binary/archive,Archives,Multi-file archive/compression,Distribution,Very broad support
+tar,Tape Archive,binary/archive,Archives,File archive,Unix/Linux,Not compression itself
+gz,GZIP,binary/compression,Archives,Compression stream,Unix/Linux,Usually one compressed stream
+7z,7-Zip Archive,binary/archive,Archives,Archive/compression,Distribution,Tooling varies
+exe,Windows Executable,binary,Operating Systems,Executable program,Windows,Platform-specific
+dll,Dynamic Link Library,binary,Operating Systems,Shared library,Windows,Loaded by applications
+so,Shared Object,binary,Operating Systems,Shared library,Linux/Unix,ELF ecosystem
+dmg,Apple Disk Image,binary/container,Operating Systems,Disk image,macOS,Platform-specific
+apk,Android Package,binary/archive,Mobile,Android application package,Android,Package contains compiled/resources
+aab,Android App Bundle,binary/archive,Mobile,Android publishing bundle,Android,Distribution-oriented
+dex,Dalvik Executable,binary,Mobile,Android bytecode,Android runtime,Compiled artifact
+geojson,GeoJSON,text/json,GIS,Geospatial vector data,Web/GIS,JSON-based
+shp,ESRI Shapefile component,binary,GIS,Geospatial vector data,GIS,Requires companion files
+obj,Wavefront OBJ,text,3D,3D geometry,Modeling,"Simple, widely supported"
+stl,STL,text/binary,3D,Triangulated surface,3D printing/CAD,Limited metadata
+gltf,glTF,text/binary ecosystem,3D,3D scene transmission,Web/3D,Designed for runtime delivery
+glb,GLB,binary/container,3D,Binary glTF package,Web/3D,Self-contained variant
+log,Log File,text/binary,Observability,Application/system records,Operations,Structure varies

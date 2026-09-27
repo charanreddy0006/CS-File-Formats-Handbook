@@ -1,0 +1,14 @@
+{
+  "name": "cs-file-formats-handbook",
+  "version": "1.0.0",
+  "type": "technical-reference",
+  "language": "Markdown + Python",
+  "runtime": "Python 3.x",
+  "dependencies": [],
+  "purpose": "Structured reference for file formats, extensions, artifacts, and engineering trade-offs.",
+  "maintainer": "Mukka Charan Kumar Reddy",
+  "validation": [
+    "python scripts/validate_catalog.py",
+    "python scripts/stats.py"
+  ]
+}

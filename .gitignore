@@ -1,0 +1,56 @@
+# OS
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Editors
+.vscode/
+.idea/
+*.swp
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+.pytest_cache/
+.mypy_cache/
+
+# Secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+
+# Build/output
+dist/
+build/
+*.egg-info/
+
+# Logs
+*.log
+*.tmp
+*.bak
+
+# Large/generated artifacts
+*.exe
+*.dll
+*.so
+*.bin
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+*.gguf
+
+# Databases
+*.sqlite
+*.sqlite3
+*.db
+
+# OS-specific package caches
+node_modules/

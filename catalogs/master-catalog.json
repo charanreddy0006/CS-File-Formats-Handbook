@@ -1,0 +1,677 @@
+[
+  {
+    "extension": "txt",
+    "name": "Plain Text",
+    "representation": "text",
+    "domain": "General",
+    "purpose": "Human-readable text",
+    "typical_use": "Very portable",
+    "notes": "No schema"
+  },
+  {
+    "extension": "md",
+    "name": "Markdown",
+    "representation": "text",
+    "domain": "Documentation",
+    "purpose": "Formatted plain-text documentation",
+    "typical_use": "GitHub/docs",
+    "notes": "Lightweight syntax"
+  },
+  {
+    "extension": "json",
+    "name": "JavaScript Object Notation",
+    "representation": "text",
+    "domain": "Data/API",
+    "purpose": "Structured data interchange",
+    "typical_use": "APIs/config",
+    "notes": "Verbose for large data"
+  },
+  {
+    "extension": "jsonl",
+    "name": "JSON Lines",
+    "representation": "text",
+    "domain": "Data Engineering",
+    "purpose": "One JSON object per line",
+    "typical_use": "Logs/streaming",
+    "notes": "Repeated keys can be expensive"
+  },
+  {
+    "extension": "csv",
+    "name": "Comma-Separated Values",
+    "representation": "text",
+    "domain": "Data",
+    "purpose": "Tabular interchange",
+    "typical_use": "Exports/spreadsheets",
+    "notes": "Weak type/schema semantics"
+  },
+  {
+    "extension": "yaml",
+    "name": "YAML",
+    "representation": "text",
+    "domain": "Configuration",
+    "purpose": "Human-friendly structured config",
+    "typical_use": "DevOps/config",
+    "notes": "Indentation-sensitive"
+  },
+  {
+    "extension": "toml",
+    "name": "TOML",
+    "representation": "text",
+    "domain": "Configuration",
+    "purpose": "Configuration with explicit structure",
+    "typical_use": "Python/tooling",
+    "notes": "Less universal than JSON"
+  },
+  {
+    "extension": "xml",
+    "name": "Extensible Markup Language",
+    "representation": "text",
+    "domain": "Documents/API",
+    "purpose": "Structured markup/data exchange",
+    "typical_use": "Enterprise/document systems",
+    "notes": "Verbose"
+  },
+  {
+    "extension": "sql",
+    "name": "SQL Script",
+    "representation": "text",
+    "domain": "Database",
+    "purpose": "Queries/schema/data scripts",
+    "typical_use": "DB migrations/dumps",
+    "notes": "Engine-specific syntax"
+  },
+  {
+    "extension": "parquet",
+    "name": "Apache Parquet",
+    "representation": "binary",
+    "domain": "Data Engineering",
+    "purpose": "Columnar analytical storage",
+    "typical_use": "Data lakes/analytics",
+    "notes": "Not designed for casual manual editing"
+  },
+  {
+    "extension": "avro",
+    "name": "Apache Avro",
+    "representation": "binary/text ecosystem",
+    "domain": "Data Engineering",
+    "purpose": "Schema-oriented serialization",
+    "typical_use": "Events/data systems",
+    "notes": "Requires schema-aware tooling"
+  },
+  {
+    "extension": "orc",
+    "name": "Apache ORC",
+    "representation": "binary",
+    "domain": "Data Engineering",
+    "purpose": "Columnar analytical storage",
+    "typical_use": "Hadoop/Hive analytics",
+    "notes": "Ecosystem-specific tooling"
+  },
+  {
+    "extension": "arrow",
+    "name": "Apache Arrow",
+    "representation": "binary",
+    "domain": "Data Engineering",
+    "purpose": "Columnar in-memory representation",
+    "typical_use": "Analytics/interchange",
+    "notes": "Primarily an in-memory format"
+  },
+  {
+    "extension": "sqlite3",
+    "name": "SQLite Database",
+    "representation": "binary",
+    "domain": "Database",
+    "purpose": "Embedded relational database",
+    "typical_use": "Apps/local storage",
+    "notes": "Single-file database"
+  },
+  {
+    "extension": "py",
+    "name": "Python Source",
+    "representation": "text",
+    "domain": "Programming",
+    "purpose": "Python source code",
+    "typical_use": "Software development",
+    "notes": "Requires Python runtime"
+  },
+  {
+    "extension": "ipynb",
+    "name": "Jupyter Notebook",
+    "representation": "text",
+    "domain": "Programming/AI",
+    "purpose": "Notebook document",
+    "typical_use": "Data science/education",
+    "notes": "Can contain outputs and metadata"
+  },
+  {
+    "extension": "pyc",
+    "name": "Python Bytecode",
+    "representation": "binary",
+    "domain": "Programming",
+    "purpose": "Compiled Python bytecode",
+    "typical_use": "Python runtime",
+    "notes": "Usually generated"
+  },
+  {
+    "extension": "java",
+    "name": "Java Source",
+    "representation": "text",
+    "domain": "Programming",
+    "purpose": "Java source",
+    "typical_use": "Software development",
+    "notes": "Compiled before typical execution"
+  },
+  {
+    "extension": "class",
+    "name": "Java Class",
+    "representation": "binary",
+    "domain": "Programming",
+    "purpose": "JVM bytecode",
+    "typical_use": "Java runtime",
+    "notes": "Not source"
+  },
+  {
+    "extension": "jar",
+    "name": "Java Archive",
+    "representation": "binary/container",
+    "domain": "Programming",
+    "purpose": "Java package/archive",
+    "typical_use": "Java applications/libraries",
+    "notes": "ZIP-based package"
+  },
+  {
+    "extension": "cpp",
+    "name": "C++ Source",
+    "representation": "text",
+    "domain": "Programming",
+    "purpose": "C++ source",
+    "typical_use": "Systems/software",
+    "notes": "Compiled"
+  },
+  {
+    "extension": "h",
+    "name": "C/C++ Header",
+    "representation": "text",
+    "domain": "Programming",
+    "purpose": "Declarations/macros",
+    "typical_use": "C/C++",
+    "notes": "Not independently executable"
+  },
+  {
+    "extension": "js",
+    "name": "JavaScript",
+    "representation": "text",
+    "domain": "Web",
+    "purpose": "JavaScript source",
+    "typical_use": "Web/Node.js",
+    "notes": "Runtime-dependent"
+  },
+  {
+    "extension": "ts",
+    "name": "TypeScript",
+    "representation": "text",
+    "domain": "Web",
+    "purpose": "Typed JavaScript source",
+    "typical_use": "Web/backend",
+    "notes": "Usually transpiled"
+  },
+  {
+    "extension": "html",
+    "name": "HTML",
+    "representation": "text",
+    "domain": "Web",
+    "purpose": "Web document structure",
+    "typical_use": "Web",
+    "notes": "Rendered by browser"
+  },
+  {
+    "extension": "css",
+    "name": "CSS",
+    "representation": "text",
+    "domain": "Web",
+    "purpose": "Presentation/style rules",
+    "typical_use": "Web",
+    "notes": "Usually delivered with HTML"
+  },
+  {
+    "extension": "wasm",
+    "name": "WebAssembly",
+    "representation": "binary",
+    "domain": "Web",
+    "purpose": "Portable low-level executable module",
+    "typical_use": "Web/server runtimes",
+    "notes": "Requires compatible runtime"
+  },
+  {
+    "extension": "sqlitedb",
+    "name": "SQLite Database",
+    "representation": "binary",
+    "domain": "Database",
+    "purpose": "SQLite storage",
+    "typical_use": "Embedded apps",
+    "notes": "Extension naming varies"
+  },
+  {
+    "extension": "pkl",
+    "name": "Pickle",
+    "representation": "binary",
+    "domain": "Python/AI",
+    "purpose": "Python object serialization",
+    "typical_use": "Python workflows",
+    "notes": "Do not load untrusted pickles"
+  },
+  {
+    "extension": "joblib",
+    "name": "Joblib Artifact",
+    "representation": "binary",
+    "domain": "Python/ML",
+    "purpose": "Python object/model persistence",
+    "typical_use": "ML workflows",
+    "notes": "Treat untrusted artifacts carefully"
+  },
+  {
+    "extension": "pt",
+    "name": "PyTorch Artifact",
+    "representation": "binary",
+    "domain": "AI/ML",
+    "purpose": "Model/tensor artifact",
+    "typical_use": "PyTorch",
+    "notes": "Exact contents depend on producer"
+  },
+  {
+    "extension": "pth",
+    "name": "PyTorch Weights/Artifact",
+    "representation": "binary",
+    "domain": "AI/ML",
+    "purpose": "Model weights/artifact",
+    "typical_use": "PyTorch",
+    "notes": "Loading safety depends on serialization"
+  },
+  {
+    "extension": "onnx",
+    "name": "Open Neural Network Exchange",
+    "representation": "binary",
+    "domain": "AI/ML",
+    "purpose": "Model interchange",
+    "typical_use": "Inference/deployment",
+    "notes": "Operator/runtime compatibility matters"
+  },
+  {
+    "extension": "safetensors",
+    "name": "SafeTensors",
+    "representation": "binary",
+    "domain": "AI/ML",
+    "purpose": "Tensor serialization",
+    "typical_use": "ML model weights",
+    "notes": "Weights-focused format"
+  },
+  {
+    "extension": "gguf",
+    "name": "GGUF",
+    "representation": "binary",
+    "domain": "AI/ML",
+    "purpose": "LLM model distribution",
+    "typical_use": "Local LLM inference",
+    "notes": "Runtime/tool compatibility matters"
+  },
+  {
+    "extension": "h5",
+    "name": "HDF5",
+    "representation": "binary",
+    "domain": "Scientific/AI",
+    "purpose": "Hierarchical data",
+    "typical_use": "Scientific/ML",
+    "notes": "Container-like structure"
+  },
+  {
+    "extension": "npy",
+    "name": "NumPy Array",
+    "representation": "binary",
+    "domain": "AI/ML/Data",
+    "purpose": "Single NumPy array",
+    "typical_use": "Python numerical work",
+    "notes": "Python/NumPy ecosystem"
+  },
+  {
+    "extension": "npz",
+    "name": "NumPy Archive",
+    "representation": "binary",
+    "domain": "AI/ML/Data",
+    "purpose": "Multiple NumPy arrays",
+    "typical_use": "Python numerical work",
+    "notes": "NumPy ecosystem"
+  },
+  {
+    "extension": "dockerfile",
+    "name": "Dockerfile",
+    "representation": "text",
+    "domain": "DevOps",
+    "purpose": "Container image build instructions",
+    "typical_use": "Docker",
+    "notes": "Conventionally extensionless"
+  },
+  {
+    "extension": "tf",
+    "name": "Terraform Configuration",
+    "representation": "text",
+    "domain": "Cloud/DevOps",
+    "purpose": "Infrastructure as code",
+    "typical_use": "Terraform",
+    "notes": "State handled separately"
+  },
+  {
+    "extension": "tfstate",
+    "name": "Terraform State",
+    "representation": "text/json-like",
+    "domain": "Cloud/DevOps",
+    "purpose": "Infrastructure state",
+    "typical_use": "Terraform",
+    "notes": "Sensitive; do not casually commit"
+  },
+  {
+    "extension": "pem",
+    "name": "PEM Encoded Security Material",
+    "representation": "text",
+    "domain": "Security",
+    "purpose": "Certificates/keys/chains",
+    "typical_use": "TLS/SSH",
+    "notes": "May contain private keys"
+  },
+  {
+    "extension": "crt",
+    "name": "Certificate",
+    "representation": "text/binary",
+    "domain": "Security",
+    "purpose": "Certificate file",
+    "typical_use": "TLS",
+    "notes": "Encoding/container varies"
+  },
+  {
+    "extension": "csr",
+    "name": "Certificate Signing Request",
+    "representation": "text",
+    "domain": "Security",
+    "purpose": "Certificate request",
+    "typical_use": "PKI",
+    "notes": "Contains public information/request data"
+  },
+  {
+    "extension": "pdf",
+    "name": "Portable Document Format",
+    "representation": "binary",
+    "domain": "Documents",
+    "purpose": "Fixed-layout document",
+    "typical_use": "Publishing",
+    "notes": "Complex internal structure"
+  },
+  {
+    "extension": "docx",
+    "name": "Office Open XML Document",
+    "representation": "binary/container",
+    "domain": "Documents",
+    "purpose": "Editable document",
+    "typical_use": "Office",
+    "notes": "Package of XML/resources"
+  },
+  {
+    "extension": "tex",
+    "name": "LaTeX Source",
+    "representation": "text",
+    "domain": "Documents",
+    "purpose": "Typesetting source",
+    "typical_use": "Academic publishing",
+    "notes": "Requires toolchain"
+  },
+  {
+    "extension": "png",
+    "name": "Portable Network Graphics",
+    "representation": "binary",
+    "domain": "Images",
+    "purpose": "Lossless raster image",
+    "typical_use": "Web/graphics",
+    "notes": "Supports transparency"
+  },
+  {
+    "extension": "jpg",
+    "name": "JPEG",
+    "representation": "binary",
+    "domain": "Images",
+    "purpose": "Lossy raster image",
+    "typical_use": "Photography/web",
+    "notes": "No native alpha channel"
+  },
+  {
+    "extension": "svg",
+    "name": "Scalable Vector Graphics",
+    "representation": "text/xml",
+    "domain": "Images",
+    "purpose": "Vector graphics",
+    "typical_use": "Icons/web",
+    "notes": "Can contain active content"
+  },
+  {
+    "extension": "webp",
+    "name": "WebP",
+    "representation": "binary",
+    "domain": "Images",
+    "purpose": "Efficient raster image",
+    "typical_use": "Web",
+    "notes": "Tooling/support varies by environment"
+  },
+  {
+    "extension": "avif",
+    "name": "AVIF",
+    "representation": "binary",
+    "domain": "Images",
+    "purpose": "Modern image compression",
+    "typical_use": "Web",
+    "notes": "Encoding/decoding cost varies"
+  },
+  {
+    "extension": "mp4",
+    "name": "MPEG-4 Part 14",
+    "representation": "binary/container",
+    "domain": "Video",
+    "purpose": "Media container",
+    "typical_use": "Web/mobile",
+    "notes": "Codec-independent container"
+  },
+  {
+    "extension": "mkv",
+    "name": "Matroska",
+    "representation": "binary/container",
+    "domain": "Video",
+    "purpose": "Flexible multimedia container",
+    "typical_use": "Media/archive",
+    "notes": "Compatibility varies"
+  },
+  {
+    "extension": "wav",
+    "name": "Waveform Audio",
+    "representation": "binary/container",
+    "domain": "Audio",
+    "purpose": "Audio container",
+    "typical_use": "Audio production",
+    "notes": "Often uncompressed PCM"
+  },
+  {
+    "extension": "flac",
+    "name": "Free Lossless Audio Codec",
+    "representation": "binary",
+    "domain": "Audio",
+    "purpose": "Lossless audio compression",
+    "typical_use": "Music/archive",
+    "notes": "Larger than lossy codecs"
+  },
+  {
+    "extension": "mp3",
+    "name": "MPEG Audio Layer III",
+    "representation": "binary",
+    "domain": "Audio",
+    "purpose": "Lossy audio",
+    "typical_use": "Music/distribution",
+    "notes": "Lossy"
+  },
+  {
+    "extension": "zip",
+    "name": "ZIP",
+    "representation": "binary/archive",
+    "domain": "Archives",
+    "purpose": "Multi-file archive/compression",
+    "typical_use": "Distribution",
+    "notes": "Very broad support"
+  },
+  {
+    "extension": "tar",
+    "name": "Tape Archive",
+    "representation": "binary/archive",
+    "domain": "Archives",
+    "purpose": "File archive",
+    "typical_use": "Unix/Linux",
+    "notes": "Not compression itself"
+  },
+  {
+    "extension": "gz",
+    "name": "GZIP",
+    "representation": "binary/compression",
+    "domain": "Archives",
+    "purpose": "Compression stream",
+    "typical_use": "Unix/Linux",
+    "notes": "Usually one compressed stream"
+  },
+  {
+    "extension": "7z",
+    "name": "7-Zip Archive",
+    "representation": "binary/archive",
+    "domain": "Archives",
+    "purpose": "Archive/compression",
+    "typical_use": "Distribution",
+    "notes": "Tooling varies"
+  },
+  {
+    "extension": "exe",
+    "name": "Windows Executable",
+    "representation": "binary",
+    "domain": "Operating Systems",
+    "purpose": "Executable program",
+    "typical_use": "Windows",
+    "notes": "Platform-specific"
+  },
+  {
+    "extension": "dll",
+    "name": "Dynamic Link Library",
+    "representation": "binary",
+    "domain": "Operating Systems",
+    "purpose": "Shared library",
+    "typical_use": "Windows",
+    "notes": "Loaded by applications"
+  },
+  {
+    "extension": "so",
+    "name": "Shared Object",
+    "representation": "binary",
+    "domain": "Operating Systems",
+    "purpose": "Shared library",
+    "typical_use": "Linux/Unix",
+    "notes": "ELF ecosystem"
+  },
+  {
+    "extension": "dmg",
+    "name": "Apple Disk Image",
+    "representation": "binary/container",
+    "domain": "Operating Systems",
+    "purpose": "Disk image",
+    "typical_use": "macOS",
+    "notes": "Platform-specific"
+  },
+  {
+    "extension": "apk",
+    "name": "Android Package",
+    "representation": "binary/archive",
+    "domain": "Mobile",
+    "purpose": "Android application package",
+    "typical_use": "Android",
+    "notes": "Package contains compiled/resources"
+  },
+  {
+    "extension": "aab",
+    "name": "Android App Bundle",
+    "representation": "binary/archive",
+    "domain": "Mobile",
+    "purpose": "Android publishing bundle",
+    "typical_use": "Android",
+    "notes": "Distribution-oriented"
+  },
+  {
+    "extension": "dex",
+    "name": "Dalvik Executable",
+    "representation": "binary",
+    "domain": "Mobile",
+    "purpose": "Android bytecode",
+    "typical_use": "Android runtime",
+    "notes": "Compiled artifact"
+  },
+  {
+    "extension": "geojson",
+    "name": "GeoJSON",
+    "representation": "text/json",
+    "domain": "GIS",
+    "purpose": "Geospatial vector data",
+    "typical_use": "Web/GIS",
+    "notes": "JSON-based"
+  },
+  {
+    "extension": "shp",
+    "name": "ESRI Shapefile component",
+    "representation": "binary",
+    "domain": "GIS",
+    "purpose": "Geospatial vector data",
+    "typical_use": "GIS",
+    "notes": "Requires companion files"
+  },
+  {
+    "extension": "obj",
+    "name": "Wavefront OBJ",
+    "representation": "text",
+    "domain": "3D",
+    "purpose": "3D geometry",
+    "typical_use": "Modeling",
+    "notes": "Simple, widely supported"
+  },
+  {
+    "extension": "stl",
+    "name": "STL",
+    "representation": "text/binary",
+    "domain": "3D",
+    "purpose": "Triangulated surface",
+    "typical_use": "3D printing/CAD",
+    "notes": "Limited metadata"
+  },
+  {
+    "extension": "gltf",
+    "name": "glTF",
+    "representation": "text/binary ecosystem",
+    "domain": "3D",
+    "purpose": "3D scene transmission",
+    "typical_use": "Web/3D",
+    "notes": "Designed for runtime delivery"
+  },
+  {
+    "extension": "glb",
+    "name": "GLB",
+    "representation": "binary/container",
+    "domain": "3D",
+    "purpose": "Binary glTF package",
+    "typical_use": "Web/3D",
+    "notes": "Self-contained variant"
+  },
+  {
+    "extension": "log",
+    "name": "Log File",
+    "representation": "text/binary",
+    "domain": "Observability",
+    "purpose": "Application/system records",
+    "typical_use": "Operations",
+    "notes": "Structure varies"
+  }
+]

@@ -1,0 +1,8 @@
+{
+  "filename": "sample.json",
+  "extension": ".json",
+  "category": "structured-data",
+  "representation": "text",
+  "encoding": "UTF-8",
+  "human_readable": true
+}

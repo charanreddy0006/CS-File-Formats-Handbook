@@ -1,0 +1,18 @@
+{
+  "txt": "text/plain",
+  "html": "text/html",
+  "css": "text/css",
+  "json": "application/json",
+  "xml": "application/xml",
+  "pdf": "application/pdf",
+  "png": "image/png",
+  "jpg": "image/jpeg",
+  "svg": "image/svg+xml",
+  "csv": "text/csv",
+  "js": "text/javascript",
+  "wasm": "application/wasm",
+  "mp4": "video/mp4",
+  "mp3": "audio/mpeg",
+  "zip": "application/zip",
+  "gz": "application/gzip"
+}

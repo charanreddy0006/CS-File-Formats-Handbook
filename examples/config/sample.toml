@@ -1,0 +1,7 @@
+[project]
+name = "format-handbook"
+version = "1.0.0"
+
+[features]
+catalog = true
+validation = true

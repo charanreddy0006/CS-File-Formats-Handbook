@@ -1,0 +1,377 @@
+{
+  "7z": {
+    "domain": "Archives",
+    "name": "7-Zip Archive",
+    "representation": "binary/archive"
+  },
+  "aab": {
+    "domain": "Mobile",
+    "name": "Android App Bundle",
+    "representation": "binary/archive"
+  },
+  "apk": {
+    "domain": "Mobile",
+    "name": "Android Package",
+    "representation": "binary/archive"
+  },
+  "arrow": {
+    "domain": "Data Engineering",
+    "name": "Apache Arrow",
+    "representation": "binary"
+  },
+  "avif": {
+    "domain": "Images",
+    "name": "AVIF",
+    "representation": "binary"
+  },
+  "avro": {
+    "domain": "Data Engineering",
+    "name": "Apache Avro",
+    "representation": "binary/text ecosystem"
+  },
+  "class": {
+    "domain": "Programming",
+    "name": "Java Class",
+    "representation": "binary"
+  },
+  "cpp": {
+    "domain": "Programming",
+    "name": "C++ Source",
+    "representation": "text"
+  },
+  "crt": {
+    "domain": "Security",
+    "name": "Certificate",
+    "representation": "text/binary"
+  },
+  "csr": {
+    "domain": "Security",
+    "name": "Certificate Signing Request",
+    "representation": "text"
+  },
+  "css": {
+    "domain": "Web",
+    "name": "CSS",
+    "representation": "text"
+  },
+  "csv": {
+    "domain": "Data",
+    "name": "Comma-Separated Values",
+    "representation": "text"
+  },
+  "dex": {
+    "domain": "Mobile",
+    "name": "Dalvik Executable",
+    "representation": "binary"
+  },
+  "dll": {
+    "domain": "Operating Systems",
+    "name": "Dynamic Link Library",
+    "representation": "binary"
+  },
+  "dmg": {
+    "domain": "Operating Systems",
+    "name": "Apple Disk Image",
+    "representation": "binary/container"
+  },
+  "dockerfile": {
+    "domain": "DevOps",
+    "name": "Dockerfile",
+    "representation": "text"
+  },
+  "docx": {
+    "domain": "Documents",
+    "name": "Office Open XML Document",
+    "representation": "binary/container"
+  },
+  "exe": {
+    "domain": "Operating Systems",
+    "name": "Windows Executable",
+    "representation": "binary"
+  },
+  "flac": {
+    "domain": "Audio",
+    "name": "Free Lossless Audio Codec",
+    "representation": "binary"
+  },
+  "geojson": {
+    "domain": "GIS",
+    "name": "GeoJSON",
+    "representation": "text/json"
+  },
+  "gguf": {
+    "domain": "AI/ML",
+    "name": "GGUF",
+    "representation": "binary"
+  },
+  "glb": {
+    "domain": "3D",
+    "name": "GLB",
+    "representation": "binary/container"
+  },
+  "gltf": {
+    "domain": "3D",
+    "name": "glTF",
+    "representation": "text/binary ecosystem"
+  },
+  "gz": {
+    "domain": "Archives",
+    "name": "GZIP",
+    "representation": "binary/compression"
+  },
+  "h": {
+    "domain": "Programming",
+    "name": "C/C++ Header",
+    "representation": "text"
+  },
+  "h5": {
+    "domain": "Scientific/AI",
+    "name": "HDF5",
+    "representation": "binary"
+  },
+  "html": {
+    "domain": "Web",
+    "name": "HTML",
+    "representation": "text"
+  },
+  "ipynb": {
+    "domain": "Programming/AI",
+    "name": "Jupyter Notebook",
+    "representation": "text"
+  },
+  "jar": {
+    "domain": "Programming",
+    "name": "Java Archive",
+    "representation": "binary/container"
+  },
+  "java": {
+    "domain": "Programming",
+    "name": "Java Source",
+    "representation": "text"
+  },
+  "joblib": {
+    "domain": "Python/ML",
+    "name": "Joblib Artifact",
+    "representation": "binary"
+  },
+  "jpg": {
+    "domain": "Images",
+    "name": "JPEG",
+    "representation": "binary"
+  },
+  "js": {
+    "domain": "Web",
+    "name": "JavaScript",
+    "representation": "text"
+  },
+  "json": {
+    "domain": "Data/API",
+    "name": "JavaScript Object Notation",
+    "representation": "text"
+  },
+  "jsonl": {
+    "domain": "Data Engineering",
+    "name": "JSON Lines",
+    "representation": "text"
+  },
+  "log": {
+    "domain": "Observability",
+    "name": "Log File",
+    "representation": "text/binary"
+  },
+  "md": {
+    "domain": "Documentation",
+    "name": "Markdown",
+    "representation": "text"
+  },
+  "mkv": {
+    "domain": "Video",
+    "name": "Matroska",
+    "representation": "binary/container"
+  },
+  "mp3": {
+    "domain": "Audio",
+    "name": "MPEG Audio Layer III",
+    "representation": "binary"
+  },
+  "mp4": {
+    "domain": "Video",
+    "name": "MPEG-4 Part 14",
+    "representation": "binary/container"
+  },
+  "npy": {
+    "domain": "AI/ML/Data",
+    "name": "NumPy Array",
+    "representation": "binary"
+  },
+  "npz": {
+    "domain": "AI/ML/Data",
+    "name": "NumPy Archive",
+    "representation": "binary"
+  },
+  "obj": {
+    "domain": "3D",
+    "name": "Wavefront OBJ",
+    "representation": "text"
+  },
+  "onnx": {
+    "domain": "AI/ML",
+    "name": "Open Neural Network Exchange",
+    "representation": "binary"
+  },
+  "orc": {
+    "domain": "Data Engineering",
+    "name": "Apache ORC",
+    "representation": "binary"
+  },
+  "parquet": {
+    "domain": "Data Engineering",
+    "name": "Apache Parquet",
+    "representation": "binary"
+  },
+  "pdf": {
+    "domain": "Documents",
+    "name": "Portable Document Format",
+    "representation": "binary"
+  },
+  "pem": {
+    "domain": "Security",
+    "name": "PEM Encoded Security Material",
+    "representation": "text"
+  },
+  "pkl": {
+    "domain": "Python/AI",
+    "name": "Pickle",
+    "representation": "binary"
+  },
+  "png": {
+    "domain": "Images",
+    "name": "Portable Network Graphics",
+    "representation": "binary"
+  },
+  "pt": {
+    "domain": "AI/ML",
+    "name": "PyTorch Artifact",
+    "representation": "binary"
+  },
+  "pth": {
+    "domain": "AI/ML",
+    "name": "PyTorch Weights/Artifact",
+    "representation": "binary"
+  },
+  "py": {
+    "domain": "Programming",
+    "name": "Python Source",
+    "representation": "text"
+  },
+  "pyc": {
+    "domain": "Programming",
+    "name": "Python Bytecode",
+    "representation": "binary"
+  },
+  "safetensors": {
+    "domain": "AI/ML",
+    "name": "SafeTensors",
+    "representation": "binary"
+  },
+  "shp": {
+    "domain": "GIS",
+    "name": "ESRI Shapefile component",
+    "representation": "binary"
+  },
+  "so": {
+    "domain": "Operating Systems",
+    "name": "Shared Object",
+    "representation": "binary"
+  },
+  "sql": {
+    "domain": "Database",
+    "name": "SQL Script",
+    "representation": "text"
+  },
+  "sqlite3": {
+    "domain": "Database",
+    "name": "SQLite Database",
+    "representation": "binary"
+  },
+  "sqlitedb": {
+    "domain": "Database",
+    "name": "SQLite Database",
+    "representation": "binary"
+  },
+  "stl": {
+    "domain": "3D",
+    "name": "STL",
+    "representation": "text/binary"
+  },
+  "svg": {
+    "domain": "Images",
+    "name": "Scalable Vector Graphics",
+    "representation": "text/xml"
+  },
+  "tar": {
+    "domain": "Archives",
+    "name": "Tape Archive",
+    "representation": "binary/archive"
+  },
+  "tex": {
+    "domain": "Documents",
+    "name": "LaTeX Source",
+    "representation": "text"
+  },
+  "tf": {
+    "domain": "Cloud/DevOps",
+    "name": "Terraform Configuration",
+    "representation": "text"
+  },
+  "tfstate": {
+    "domain": "Cloud/DevOps",
+    "name": "Terraform State",
+    "representation": "text/json-like"
+  },
+  "toml": {
+    "domain": "Configuration",
+    "name": "TOML",
+    "representation": "text"
+  },
+  "ts": {
+    "domain": "Web",
+    "name": "TypeScript",
+    "representation": "text"
+  },
+  "txt": {
+    "domain": "General",
+    "name": "Plain Text",
+    "representation": "text"
+  },
+  "wasm": {
+    "domain": "Web",
+    "name": "WebAssembly",
+    "representation": "binary"
+  },
+  "wav": {
+    "domain": "Audio",
+    "name": "Waveform Audio",
+    "representation": "binary/container"
+  },
+  "webp": {
+    "domain": "Images",
+    "name": "WebP",
+    "representation": "binary"
+  },
+  "xml": {
+    "domain": "Documents/API",
+    "name": "Extensible Markup Language",
+    "representation": "text"
+  },
+  "yaml": {
+    "domain": "Configuration",
+    "name": "YAML",
+    "representation": "text"
+  },
+  "zip": {
+    "domain": "Archives",
+    "name": "ZIP",
+    "representation": "binary/archive"
+  }
+}

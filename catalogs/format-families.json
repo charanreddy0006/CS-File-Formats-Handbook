@@ -1,0 +1,77 @@
+{
+  "source_code": [
+    "py",
+    "java",
+    "cpp",
+    "c",
+    "js",
+    "ts",
+    "go",
+    "rs",
+    "cs",
+    "swift"
+  ],
+  "structured_data": [
+    "json",
+    "jsonl",
+    "yaml",
+    "xml",
+    "csv",
+    "parquet",
+    "avro",
+    "orc"
+  ],
+  "configuration": [
+    "json",
+    "yaml",
+    "yml",
+    "toml",
+    "ini",
+    "env",
+    "conf"
+  ],
+  "ml_models": [
+    "pt",
+    "pth",
+    "onnx",
+    "safetensors",
+    "gguf",
+    "h5"
+  ],
+  "documents": [
+    "md",
+    "pdf",
+    "docx",
+    "tex",
+    "rtf",
+    "epub"
+  ],
+  "media": [
+    "png",
+    "jpg",
+    "svg",
+    "webp",
+    "avif",
+    "mp4",
+    "mkv",
+    "wav",
+    "flac",
+    "mp3"
+  ],
+  "archives": [
+    "zip",
+    "tar",
+    "gz",
+    "7z",
+    "bz2",
+    "xz"
+  ],
+  "security": [
+    "pem",
+    "crt",
+    "cer",
+    "csr",
+    "p12",
+    "pfx"
+  ]
+}
